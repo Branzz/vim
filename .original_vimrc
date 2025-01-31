@@ -1,0 +1,259 @@
+"source ~/.vimrc
+
+set scrolloff=5
+
+"time out for mappings
+set timeout=80
+set timeoutlen=80
+
+"time out for keycodes
+set ttimeout=80
+set ttimeoutlen=80
+
+set incsearch
+
+"set timeout=on
+
+"let mapleader = <space>
+
+"no <leader>v <C-v>
+no <C-k> <C-v>
+no ga ggVG
+
+
+"kept the same:
+"a : ; d i M r R
+" d D s S
+
+no U <C-r>
+
+no . e
+no e .
+
+"no d .
+"no s d
+"no e s
+"no S D
+"no D S
+
+no Q T
+no ~ Q
+no Y ~
+no % Y
+no E %
+no > E
+no v >
+no k v
+no c k
+no j c
+no t j
+no q t
+no # q
+no & #
+no V &
+no K V
+no <Bar> K
+no H <Bar>
+no C H^
+no J C
+no ^ J
+no T ^
+
+no , w
+no w <
+no < W
+no W L^
+no L N
+no N $
+no $ _
+no _ =
+no = +
+no + -
+no - :
+no : ,
+
+no <C-=> <C-OS>
+no <C-+> <C-Ol>
+
+no l n
+no n l
+"no n <Space>
+
+"no h <Backspace>
+
+no <C-b> ge
+no <C-S-b> gE
+
+no ge g.
+no gE g>
+
+no g# g&
+no g& gV
+
+no <C-e> .j
+no yw yiw
+no jw ciw
+no cw ciw
+no j( cw(
+no j" ci"
+no j< ci<
+no dw daw
+
+no 'v `>
+no 'w `>
+no '/ `[
+no '= `]
+
+no " `
+no ` !
+no ! "
+
+no [ {
+no { [
+no ] }
+no } ]
+
+"no Y y$
+
+no gUw gU,
+
+iunmap <Esc>
+
+"sec sidescroll=1
+
+"scroll by one
+no <M-c> <C-y>
+no <M-t> <C-e>
+
+"put cursor at
+no zc zt
+no zt zz
+no zw zb
+
+no zn zl
+
+no <C-h> <C-u>
+no <C-n> <C-d>
+
+"vmap <C-p> y'>p
+
+"@w bk.
+
+"eE .>
+"dD eE
+"hH dD
+"jJ hH -
+"cC jJ -
+"iI cC
+"gG iI
+"uU gG
+"fF uU
+"yY fF
+"tT yY
+"kK tT
+"vV kK
+".> kK
+
+"no u i
+"no i u
+"no U I
+"no I U
+
+"imap <Esc> <Esc>
+
+"no <A-space> i
+"imap <A-space> <Esc>
+
+"imap uu <Esc>
+"imap hh <Esc>
+"imap uh <Esc>
+"imap hu <Esc>
+
+no <M-a> <C-x>
+
+iunmap <Left>
+iunmap <Up>
+iunmap <Down>
+iunmap <Right>
+
+imap <C-h> <BS>
+imap <C-n> <Del>
+
+imap <M-u> <Esc>
+imap <C-u> <Esc>
+
+no   <C-u> i
+no   <C-h> i
+no   <M-u> i
+no   <M-h> i
+no   <Space> i
+vmap <C-u> <Esc>
+
+vmap <M-u> <Esc>
+
+imap <F1> <Esc>
+no   <F1> i
+vmap <F1> <Esc>
+no kw viw
+
+no <C-i> i <Esc>r
+no <C-i> i <Esc>r
+
+"enter visual mode from insert mode
+imap <M-k> <Esc>k
+imap <M-S-k> <Esc>K
+"imap <C-M-k> <Esc>nK
+"imap <M-K> <Esc>nK
+imap <C-k> <Esc><C-k>
+"imap <C-K> <Esc>nK
+
+"v enters visual mode
+no <M-k> k
+no <M-S-k> K
+no <C-M-k> <C-k>
+
+imap <M-h> <C-o>h
+imap <M-c> <C-o>c
+imap <M-t> <C-o>t
+imap <M-n> <C-o>n
+
+"scroll horizontally
+no <C-M-h> 20zh
+no <C-M-n> 20zl
+no <C-M-S-H> 250zh
+no <C-M-S-N> 250zl
+
+"scroll pages
+no <C-M-c> <C-b>
+no <C-M-t> <C-f>
+
+"move lines
+no <M-w> :m .+1<CR>==
+no <M-m> :m .-2<CR>==
+imap <M-w> <Esc>:m .+1<CR>==gi
+imap <M-m> <Esc>:m .-2<CR>==gi
+vmap <M-w> :m '>+1<CR>==gv
+vmap <M-m> :m '<-2<CR>==gv
+
+no <C-S-t> A // TODO(bran) 
+imap <C-S-t> <Esc>A // TODO(bran) 
+
+imap <C-D> <Up><C-d>
+no   <C-D> <Up><C-d>
+
+
+"ino <Esc> :action EditorEscape
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t // TODO
+"map \r <Action>(ReformatCode)
+
+"" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)
+
+
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+

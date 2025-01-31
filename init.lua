@@ -1,3 +1,2 @@
 require("bran")
-print("hello")
 
